@@ -142,7 +142,9 @@
             width: 100%;
             z-index: 1000;
         }
-
+        .navbar h1{
+            font-size: 30px;
+        }
         .container {
             width: 90%;
             margin: 0 auto;
@@ -159,12 +161,13 @@
 
         .nav-links li {
             margin: 0 15px;
+            font-size: 20px;
         }
 
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 20px;
         }
 
         .nav-links a:hover {
@@ -254,13 +257,13 @@
         }
 
         .feature-item h3 {
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 15px;
             color: #ff6600;
         }
 
         .feature-item p {
-            font-size: 16px;
+            font-size: 20px;
             color: #666;
         }
         
@@ -273,7 +276,7 @@
         }
 
         .testimonials h2 {
-            font-size: 36px;
+            font-size: 40px;
             margin-bottom: 40px;
             color: #333;
         }
@@ -294,15 +297,34 @@
         }
 
         .testimonial p {
-            font-size: 16px;
+            font-size: 18px;
             color: #666;
             margin-bottom: 15px;
         }
 
         .testimonial h3 {
-            font-size: 18px;
+            font-size: 20px;
             color: #333;
         }
+        .circle-container {
+            width: 150px; /* Sesuaikan ukuran lingkaran */
+            height: 150px;
+            background-color: white; /* Warna lingkaran */
+            border-radius: 50%; /* Membuatnya menjadi lingkaran */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Supaya gambar tidak keluar */
+            border: 2px solid #ccc; /* Opsional: Tambahkan border */
+        }
+
+        .circle-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Agar gambar tidak terdistorsi */
+            align-items: 40%;
+        }
+
 
         /* About Us Section */
         .about-us {
@@ -312,13 +334,13 @@
         }
 
         .about-us h2 {
-            font-size: 36px;
+            font-size: 40px;
             margin-bottom: 40px;
             color: #333;
         }
 
         .about-us p {
-            font-size: 18px;
+            font-size: 20px;
             color: #666;
             max-width: 800px;
             margin: 0 auto 30px;
@@ -344,12 +366,12 @@
         }
 
         .team-member h3 {
-            font-size: 20px;
+            font-size: 25px;
             color: #333;
         }
 
         .team-member p {
-            font-size: 16px;
+            font-size: 20px;
             color: #666;
         }
         .panduan h2{
@@ -365,31 +387,31 @@
        
 
         .button-container {
-  text-align: center;
-  margin-top: -10px !important; /* Naikkan tombol lebih dekat ke teks */
-}
+            text-align: center;
+            margin-top: -10px !important; /* Naikkan tombol lebih dekat ke teks */
+        }
 
-.button {
-  display: inline-block;
-  background-color: #6a0dad; /* Warna ungu */
-  color: white;
-  padding: 5px 16px !important; /* Kurangi padding agar teks lebih naik */
-  text-decoration: none;
-  border-radius: 8px !important; /* Lebih smooth */
-  font-size: 16px !important; /* Ukuran teks sedikit lebih besar */
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
-  position: relative;
-  top: -100px !important; /* Paksa tombol lebih naik */
-}
+        .button {
+            display: inline-block;
+            background-color: #6a0dad; /* Warna ungu */
+            color: white;
+            padding: 5px 16px !important; /* Kurangi padding agar teks lebih naik */
+            text-decoration: none;
+            border-radius: 8px !important; /* Lebih smooth */
+            font-size: 16px !important; /* Ukuran teks sedikit lebih besar */
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+            position: relative;
+            top: -100px !important; /* Paksa tombol lebih naik */
+        }
 
-.button:hover {
-  background-color: #5a009d !important;
-  transform: translateY(-3px) !important; /* Efek hover */
-}
+        .button:hover {
+            background-color: #5a009d !important;
+            transform: translateY(-3px) !important; /* Efek hover */
+        }
 
 
         /* Footer */
@@ -429,16 +451,16 @@
                 <li><a href="#about-us">Tim</a></li>
                 <li><a href="#testimonials">Testimoni</a></li>
                 <li><a href="#panduan">panduan</a></li>
+                <li><a href="#sign-in">sign-in</a></li>
             </ul>
         </div>
     </nav>
-    
 
-<section class="halo">
+<section id="sign-in" class="halo">
     <div class="halo-text">
         <h2>Inovasi yang Membantu Proses Absensi Anda</h2>
-        <p>dapat menyimpan database absensi siswa secara aman dan evisien, komprehensif untuk seluruh siswa,serta mudah dalam perekapan data kehadiran selama tahun ajaran berjalan.</p>
-        <a href="#cta" class="cta-button">Sign in</a>
+        <p>dapat menyimpan database absensi siswa secara aman dan evisien, komprehensif untuk seluruh siswa,serta mudah dalam perekapan data kehadiran selama tahun ajaran berjalan.</p> 
+            <a href="#cta" class="cta-button">Sign in</a>
     </div>
     <img src="images/absen.png" alt="absen">
 </section>
