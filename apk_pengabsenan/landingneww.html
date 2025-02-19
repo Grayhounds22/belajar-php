@@ -132,13 +132,45 @@
             text-align: center;
         }
 
-/* Agar gambar melayang di atas teks */
-       
+
+        .navbar {
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            color: #ddd;
+        }
         
-
-
-
-        /* Hero Section */
         .halo {
             display: flex;
             justify-content: center;
@@ -194,6 +226,12 @@
             color: #333;
             color: #fff
         }
+        .features p{
+            font-size: 30px;
+            margin-bottom: 40px;
+            color: #ddd;
+
+        }
 
         .feature-items {
             display: flex;
@@ -225,6 +263,7 @@
             font-size: 16px;
             color: #666;
         }
+        
 
         /* Testimonials */
         .testimonials {
@@ -313,49 +352,45 @@
             font-size: 16px;
             color: #666;
         }
-
-        /* Contact Us Section */
-        .contact-us {
-            background-color: #333;
-            color: #fff;
-            padding: 80px 20px;
+        .panduan h2{
             text-align: center;
+            height: 80px;
+
+        }
+        .panduan p{
+            text-align: center;
+            height: 200px;
+
         }
        
-        .contact-us h2 {
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
 
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
+        .button-container {
+  text-align: center;
+  margin-top: -10px !important; /* Naikkan tombol lebih dekat ke teks */
+}
 
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
+.button {
+  display: inline-block;
+  background-color: #6a0dad; /* Warna ungu */
+  color: white;
+  padding: 5px 16px !important; /* Kurangi padding agar teks lebih naik */
+  text-decoration: none;
+  border-radius: 8px !important; /* Lebih smooth */
+  font-size: 16px !important; /* Ukuran teks sedikit lebih besar */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: -100px !important; /* Paksa tombol lebih naik */
+}
 
-        .contact-form button {
-            width: 100%;
-            padding: 15px;
-            background-color: #ff6600;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+.button:hover {
+  background-color: #5a009d !important;
+  transform: translateY(-3px) !important; /* Efek hover */
+}
 
-        .contact-form button:hover {
-            background-color: #cc5200;
-        }
 
         /* Footer */
         footer {
@@ -386,6 +421,17 @@
         <img src="images/siswa.png" alt="Ilustrasi Siswa" class="hero-image">
        
     </section>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">APPASI</h1>
+            <ul class="nav-links">
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#about-us">Tim</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#panduan">panduan</a></li>
+            </ul>
+        </div>
+    </nav>
     
 
 <section class="halo">
@@ -397,8 +443,9 @@
     <img src="images/absen.png" alt="absen">
 </section>
 
-<section class="features">
-    <h2>Keunggulan Kami</h2>
+<section id="features"  class="features">
+    <h2>Fitur Utama </h2>
+    <p>kami juga memiliki beberapa fitur utama.</p>
     <div class="feature-items">
         <div class="feature-item">
             <h3>Rekab Otomatis</h3>
@@ -416,11 +463,12 @@
             <h3>Data Absen Aman</h3>
             <p>Data absen hanya dapat diedit oleh Admin saja.</p>
         </div>
+       
       
     </div>
 </section>
 
-<section class="testimonials">
+<section id="testimonials"   class="testimonials">
     <h2>Apa Kata Pengguna Kami?</h2>
     <div class="testimonial-slider">
         <div class="testimonial">
@@ -434,8 +482,8 @@
     </div>
 </section>
 
-<section class="about-us">
-    <h2>Tentang Kami</h2>
+<section id ="about-us"  class="about-us">
+    <h2>Tim kami</h2>
     <p>Kami adalah tim yang berfokus pada inovasi dan kualitas. Kami berkomitmen penuh untuk mempermudah proses pengabsenan .</p>
     <div class="team">
         <div class="team-member">
@@ -459,7 +507,7 @@
             <p>Back End.</p>
         </div>
         <div class="team-member">
-            <img src="images/Darwin.png" alt="Team Member">
+            <img src="images/ig.png" alt="Team Member">
             <h3>Raafi Hafidz Wardono</h3>
             <p>Front End.</p>
         </div>
@@ -470,6 +518,16 @@
         </div>
     </div>
 </section>
+<section id="panduan"    class="panduan">
+    <h2>Cara Menggunakan Aplikasi</h2>
+    <p>kami juga menyediakan panduan penggunaan aplikasi untuk mempermudah pengguna dalam menggunakan aplikasi ini.</p>   
+    <div class="button-container">
+    <a href="#" class="button">Pelajari Lebih Lanjut</a>
+  </div>
+</div>
+</section>
+
+
 
 
 
