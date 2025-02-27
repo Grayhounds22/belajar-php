@@ -1762,5 +1762,11 @@
   # Starter Section Section
   --------------------------------------------------------------*/
   .starter-section {
-    /* Add your styles here */
+    .starter-section {
+      background-color: #f4f4f4; /* Warna latar belakang abu-abu muda */
+      padding: 20px; /* Ruang di dalam elemen */
+      text-align: center; /* Teks berada di tengah */
+      border-radius: 10px; /* Membuat sudut elemen melengkung */
+  }
+  /* Add your styles here */
   }
